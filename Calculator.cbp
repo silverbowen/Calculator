@@ -33,8 +33,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="include/Token.h.h" />
-		<Unit filename="src/Token.h.cpp" />
+		<Unit filename="Token.cpp" />
+		<Unit filename="Token.h" />
+		<Unit filename="TokenStream.cpp" />
+		<Unit filename="TokenStream.h" />
+		<Unit filename="calculator01.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

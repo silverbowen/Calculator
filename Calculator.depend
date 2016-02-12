@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1454691724 source:/home/silverbowen/Git/Calculator/calculator01.cpp
+1455304162 source:/home/silverbowen/Git/Calculator/calculator01.cpp
 	"TokenStream.h"
 
 1454628551 /home/silverbowen/Git/Calculator/include/Token.h
@@ -15,4 +15,18 @@
 
 1454687946 source:/home/silverbowen/Git/Calculator/src/TokenStream.cpp
 	"TokenStream.h"
+
+1454686795 source:/home/silverbowen/Git/Calculator/Token.cpp
+	"Token.h"
+
+1454628551 /home/silverbowen/Git/Calculator/Token.h
+
+1454691865 source:/home/silverbowen/Git/Calculator/TokenStream.cpp
+	"TokenStream.h"
+
+1454628272 /home/silverbowen/Git/Calculator/TokenStream.h
+	"Token.h"
+	<iostream>
+	<string>
+	<stdexcept>
 

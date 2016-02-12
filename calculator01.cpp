@@ -100,6 +100,9 @@ double primary(TokenStream& tokenstream)
 {
     Token token = tokenstream.getToken();
 
+    if (token.kind != '(' && token.kind != '8') // check for error
+        error("primary expected");
+
     if (token.kind == '(') // handle ‘(‘ expression ‘)’
     {
         double result = expression(tokenstream);           // set result to value of expression
@@ -107,10 +110,8 @@ double primary(TokenStream& tokenstream)
         if (token.kind != ')') error("')' expected"); // check for error
         return result;                                     // return divisor
     }
-    if (token.kind == '8')  // we use ‘8’ to represent a number
+    else // (token.kind == '8') - to represent a number
         return token.value; // return the number’s value
-    if (token.kind != '(' && token.kind != '8') // check for error
-        error("primary expected");
 }
 
 inline void error(const std::string& input)
