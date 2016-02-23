@@ -10,6 +10,8 @@ class TokenStream
         TokenStream();
         void setToken(Token token);
         Token getToken();
+        void ignore(char ch);
+
     protected:
     private:
         bool full {false};
